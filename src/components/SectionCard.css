@@ -1,0 +1,51 @@
+/* ============================================
+   SectionCard — Reusable Card Container (Refined)
+   ============================================ */
+
+.section-card {
+  background-color: var(--surface, #FFFFFF);
+  border: 1px solid var(--border, #E2E8F0);
+  border-radius: var(--radius-lg, 14px);
+  padding: 24px;
+  box-shadow: var(--shadow, 0 1px 3px rgba(0, 0, 0, 0.08));
+  margin-bottom: 16px;
+}
+
+/* Variants — left border accent + subtle background tint */
+.section-card--success {
+  border-left: 5px solid var(--success, #10B981);
+  background-color: #FAFFFE;
+}
+
+.section-card--warning {
+  border-left: 5px solid var(--warning, #F59E0B);
+  background-color: #FFFCF5;
+}
+
+.section-card--info {
+  border-left: 5px solid var(--primary, #6366F1);
+  background-color: #FAFAFE;
+}
+
+/* Title */
+.section-card-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-primary, #0F172A);
+  margin-bottom: 4px;
+  letter-spacing: -0.2px;
+  line-height: 1.4;
+}
+
+/* Description */
+.section-card-description {
+  font-size: 14px;
+  color: var(--text-secondary, #64748B);
+  margin-bottom: 16px;
+  line-height: 1.55;
+}
+
+/* Body */
+.section-card-body {
+  /* Children flow naturally */
+}

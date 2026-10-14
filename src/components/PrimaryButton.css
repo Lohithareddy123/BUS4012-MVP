@@ -1,0 +1,73 @@
+/* ============================================
+   PrimaryButton — Reusable Button Styles (Refined)
+   ============================================ */
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 2px solid transparent;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* Primary variant — filled indigo */
+.primary-button--primary {
+  background-color: var(--primary, #6366F1);
+  color: white;
+  border-color: var(--primary, #6366F1);
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+}
+
+.primary-button--primary:hover {
+  background-color: var(--primary-hover, #4F46E5);
+  border-color: var(--primary-hover, #4F46E5);
+  box-shadow: 0 4px 8px rgba(99, 102, 241, 0.25);
+}
+
+.primary-button--primary:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Outline variant — indigo border, transparent fill */
+.primary-button--outline {
+  background-color: transparent;
+  color: var(--primary, #6366F1);
+  border-color: var(--border-strong, #CBD5E1);
+}
+
+.primary-button--outline:hover {
+  background-color: var(--primary-light, #EEF2FF);
+  border-color: var(--primary, #6366F1);
+}
+
+.primary-button--outline:active {
+  transform: scale(0.97);
+}
+
+/* Focus-visible */
+.primary-button:focus-visible {
+  outline: 2px solid var(--primary, #6366F1);
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+.primary-button--disabled,
+.primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Full width utility (applied by parent) */
+.primary-button--full {
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+# Backend secrets and virtual environment
+backend/.env
+backend/.venv/
+backend/__pycache__/
+
+# Other environment files
+.env
+.env.*
+!.env.example
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+
+# Python generated files
+__pycache__/
+*.py[cod]
