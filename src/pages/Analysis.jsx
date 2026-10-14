@@ -49,7 +49,7 @@ function Analysis({ appData, onComplete }) {
             ratingsB[priority] = appData.ratings[priority]?.optionB
           }
 
-          const response = await fetch('http://127.0.0.1:8000/api/analyze', {
+          const response = await fetch('https://resolvepath-ai-api.onrender.com/', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
