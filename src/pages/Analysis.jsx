@@ -48,7 +48,7 @@ function Analysis({ appData, onComplete }) {
             ratingsA[priority] = appData.ratings[priority]?.optionA
             ratingsB[priority] = appData.ratings[priority]?.optionB
           }
-
+          // Send analysis requests to the deployed Render backend.
           const response = await fetch('https://resolvepath-ai-api.onrender.com/api/analyze', {
             method: 'POST',
             headers: {
